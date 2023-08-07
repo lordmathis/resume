@@ -36,5 +36,3 @@ jobs:
           asset_path: ./main.pdf
           asset_name: main.pdf
           asset_content_type: pdf
-          asset_name: main.pdf
-          asset_content_type: pdf
