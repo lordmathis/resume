@@ -17,10 +17,7 @@ jobs:
         with:
           root_file: resume.tex
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: actions/upload-artifact@v3
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          automatic_release_tag: ${{ steps.date.outputs.date }}
-          files: |
-            resume.pdf
+          name: resume
+          path: ./resume.pdf
