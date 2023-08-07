@@ -12,12 +12,12 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v3
         
-      - name: Compile LaTeX document
+      - name: Compile
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
 
-      - uses: actions/upload-artifact@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: resume
-          path: ./resume.pdf
+          files: ./resume.pdf
