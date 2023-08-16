@@ -21,10 +21,6 @@ jobs:
         with:
           root_file: resume.tex
 
-      - name: Debug
-        run: |
-          echo "Tag is: '${{ env.NOW }}'" # Output works
-
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
