@@ -22,7 +22,7 @@ jobs:
           root_file: resume.tex
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.NOW }}
           files: ./resume.pdf
